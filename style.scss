@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+//Variable Declaration
+
+
+$desktop: 860px;
+$primary-c: #ccc;
+$accent: #9d302e;
+
+
+//Styles
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+#bg {
+    background-image: url('assets/night.jpg');
+    background-size: cover;
+    .main{
+        background: rgba($color: #000000, $alpha: 0.0);
+        width: 600px;
+        margin: 50px auto;
+        height: 200px;
+        position: relative;
+        padding: 20px;
+        .badge{
+            background: $accent;
+            color: $primary-c;
+            padding: 5px 10px;
+            font-family: sans-serif;
+            font-weight: bold;
+            width: 170px;
+            position: absolute;
+            top: -15px;
+            left: 36%;
+            text-transform: uppercase;
+        }
+        .clock{
+            //background-color: rgba($color: #000000, $alpha: 0.2);
+            text-align: center;
+            font-size: 56px;
+            height: 100%;
+            padding-top: 45px;         
+            font-family: 'Press Start 2P';  
+        }
+    }
+}
